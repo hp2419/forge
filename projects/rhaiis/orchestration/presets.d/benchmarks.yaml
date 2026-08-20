@@ -6,3 +6,39 @@ benchmark:
   rhaiis.profiler.enabled: true
   caliper.postprocess.csv_dashboard.enabled: true
   rhaiis.agent_analysis.enabled: false
+
+benchmark-standard:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key:
+  - profile1
+  - profile2
+
+benchmark-long-context:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key:
+  - profile4
+  - profile5
+
+benchmark-full-sweep:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key:
+  - profile1
+  - profile2
+  - profile3
+  - profile4
+  - profile5
+  - profile6
+  - profile7
+
+benchmark-multi-turn:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key: profile6
+
+benchmark-heterogeneous:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key: profile7
