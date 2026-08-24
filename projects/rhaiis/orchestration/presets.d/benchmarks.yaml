@@ -6,3 +6,49 @@ benchmark:
   rhaiis.profiler.enabled: true
   caliper.postprocess.csv_dashboard.enabled: true
   rhaiis.agent_analysis.enabled: false
+
+benchmark-standard:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key:
+  - balanced
+  - variable
+
+benchmark-long-context:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key:
+  - long-context
+  - ultra-long-context
+
+benchmark-full-sweep:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key:
+  - balanced
+  - variable
+  - summarization
+  - long-context
+  - ultra-long-context
+  - multi-turn
+  - heavy-heterogeneous
+
+benchmark-multi-turn:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key: multi-turn
+
+benchmark-multi-turn-prefix-on:
+  extends:
+  - benchmark-multi-turn
+  - prefix-cache-on
+
+benchmark-multi-turn-prefix-off:
+  extends:
+  - benchmark-multi-turn
+  - prefix-cache-off
+
+benchmark-heterogeneous:
+  extends:
+  - benchmark
+  tests.rhaiis.workload_key: heavy-heterogeneous

@@ -63,6 +63,37 @@ profile6:
 profile7:
   tests.rhaiis.workload_key: profile7
 
+# Named aliases (same workloads, readable names)
+balanced:
+  tests.rhaiis.workload_key: balanced
+
+variable:
+  tests.rhaiis.workload_key: variable
+
+summarization:
+  tests.rhaiis.workload_key: summarization
+
+long-context:
+  tests.rhaiis.workload_key: long-context
+
+ultra-long-context:
+  tests.rhaiis.workload_key: ultra-long-context
+
+multi-turn:
+  tests.rhaiis.workload_key: multi-turn
+
+heavy-heterogeneous:
+  tests.rhaiis.workload_key: heavy-heterogeneous
+
+# ── Feature toggles ─────────────────────────────────────────
+
+prefix-cache-on:
+  rhaiis.engines.vllm.args.no-enable-prefix-caching: false
+  rhaiis.engines.vllm.args.enable-prefix-caching: true
+
+prefix-cache-off:
+  rhaiis.engines.vllm.args.no-enable-prefix-caching: true
+
 # ── Models ──────────────────────────────────────────────────
 # Short aliases default to the FP8 variant where available.
 # Use the full name (e.g. llama-70b-w4a16) for other quants.
