@@ -88,7 +88,6 @@ heavy-heterogeneous:
 # ── Feature toggles ─────────────────────────────────────────
 
 prefix-cache-on:
-  rhaiis.engines.vllm.args.no-enable-prefix-caching: false
   rhaiis.engines.vllm.args.enable-prefix-caching: true
 
 prefix-cache-off:
