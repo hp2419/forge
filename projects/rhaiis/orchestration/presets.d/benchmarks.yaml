@@ -33,20 +33,17 @@ benchmark-full-sweep:
   - profile6
   - profile7
 
-benchmark-multi-turn:
-  extends:
-  - benchmark
-  tests.rhaiis.workload_key: profile6
-
 benchmark-multi-turn-prefix-on:
   extends:
-  - benchmark-multi-turn
+  - benchmark
   - prefix-cache-on
+  tests.rhaiis.workload_key: profile6
 
 benchmark-multi-turn-prefix-off:
   extends:
-  - benchmark-multi-turn
+  - benchmark
   - prefix-cache-off
+  tests.rhaiis.workload_key: profile6
 
 benchmark-heterogeneous:
   extends:
