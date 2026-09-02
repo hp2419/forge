@@ -11,32 +11,32 @@ benchmark-standard:
   extends:
   - benchmark
   tests.rhaiis.workload_key:
-  - balanced
-  - decode-heterogeneous
+  - profile1
+  - profile2
 
 benchmark-long-context:
   extends:
   - benchmark
   tests.rhaiis.workload_key:
-  - long-context
-  - ultra-long-context
+  - profile4
+  - profile5
 
 benchmark-full-sweep:
   extends:
   - benchmark
   tests.rhaiis.workload_key:
-  - balanced
-  - decode-heterogeneous
-  - summarization
-  - long-context
-  - ultra-long-context
-  - multi-turn
-  - heavy-heterogeneous
+  - profile1
+  - profile2
+  - profile3
+  - profile4
+  - profile5
+  - profile6
+  - profile7
 
 benchmark-multi-turn:
   extends:
   - benchmark
-  tests.rhaiis.workload_key: multi-turn
+  tests.rhaiis.workload_key: profile6
 
 benchmark-multi-turn-prefix-on:
   extends:
@@ -51,4 +51,4 @@ benchmark-multi-turn-prefix-off:
 benchmark-heterogeneous:
   extends:
   - benchmark
-  tests.rhaiis.workload_key: heavy-heterogeneous
+  tests.rhaiis.workload_key: profile7

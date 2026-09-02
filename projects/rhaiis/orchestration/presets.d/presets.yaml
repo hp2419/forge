@@ -63,27 +63,27 @@ profile6:
 profile7:
   tests.rhaiis.workload_key: profile7
 
-# Named aliases (same workloads, readable names)
+# Named aliases (readable names → numbered profiles)
 balanced:
-  tests.rhaiis.workload_key: balanced
+  tests.rhaiis.workload_key: profile1
 
 decode-heterogeneous:
-  tests.rhaiis.workload_key: decode-heterogeneous
+  tests.rhaiis.workload_key: profile2
 
 summarization:
-  tests.rhaiis.workload_key: summarization
+  tests.rhaiis.workload_key: profile3
 
 long-context:
-  tests.rhaiis.workload_key: long-context
+  tests.rhaiis.workload_key: profile4
 
 ultra-long-context:
-  tests.rhaiis.workload_key: ultra-long-context
+  tests.rhaiis.workload_key: profile5
 
 multi-turn:
-  tests.rhaiis.workload_key: multi-turn
+  tests.rhaiis.workload_key: profile6
 
 heavy-heterogeneous:
-  tests.rhaiis.workload_key: heavy-heterogeneous
+  tests.rhaiis.workload_key: profile7
 
 # ── Feature toggles ─────────────────────────────────────────
 
