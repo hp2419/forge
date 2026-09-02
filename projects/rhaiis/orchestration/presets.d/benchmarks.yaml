@@ -12,7 +12,7 @@ benchmark-standard:
   - benchmark
   tests.rhaiis.workload_key:
   - balanced
-  - variable
+  - decode-heterogeneous
 
 benchmark-long-context:
   extends:
@@ -26,7 +26,7 @@ benchmark-full-sweep:
   - benchmark
   tests.rhaiis.workload_key:
   - balanced
-  - variable
+  - decode-heterogeneous
   - summarization
   - long-context
   - ultra-long-context

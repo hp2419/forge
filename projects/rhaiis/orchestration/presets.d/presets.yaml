@@ -67,8 +67,8 @@ profile7:
 balanced:
   tests.rhaiis.workload_key: balanced
 
-variable:
-  tests.rhaiis.workload_key: variable
+decode-heterogeneous:
+  tests.rhaiis.workload_key: decode-heterogeneous
 
 summarization:
   tests.rhaiis.workload_key: summarization
