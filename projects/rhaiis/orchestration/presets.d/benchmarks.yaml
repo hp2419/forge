@@ -14,13 +14,6 @@ benchmark-standard:
   - profile1
   - profile4
 
-benchmark-long-context:
-  extends:
-  - benchmark
-  tests.rhaiis.workload_key:
-  - profile4
-  - profile5
-
 benchmark-multi-turn-prefix-on:
   extends:
   - benchmark
