@@ -32,7 +32,7 @@ profile5:
 
 profile6:
   data: "prompt_tokens=128,output_tokens=128,turns=5,prefix_tokens=512,prefix_count=10000"
-  rates: [1, 32, 64, 128, 256]
+  rates: [1, 32, 64, 128, 256, 512]
   max_seconds: 450
 
 profile7:
